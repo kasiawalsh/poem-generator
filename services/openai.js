@@ -2,6 +2,8 @@ import OpenAI from 'openai';
 import dotenv from 'dotenv';
 dotenv.config();
 
+console.log("OpenAI API Key Loaded:", !!process.env.OPENAI_API_KEY); // This will print `true` if the key is loaded
+
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY,
 });
